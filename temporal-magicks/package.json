@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "postinstall": "npm install --prefix src/frontend",
-    "start": "node src/app.js",
+    "start": "NODE_ENV=production node src/app.js",
     "dev": "run-p dev:*",
     "dev:frontend": "npm run dev --prefix src/frontend",
     "dev:server": "DATABASE_URL=$(heroku config:get DATABASE_URL -a uta-text-creativity-p-1) NODE_ENV=development nodemon src/app.js"
@@ -16,11 +16,13 @@
   "license": "ISC",
   "dependencies": {
     "@18nguyenl/artificer": "^0.0.3",
+    "alloyfinger": "^0.1.16",
     "dotenv": "^16.0.0",
     "fastify": "^3.27.2",
     "fastify-plugin": "^3.0.1",
     "fastify-postgres": "^3.6.0",
     "fastify-static": "^4.5.0",
+    "fastify-websocket": "^4.2.2",
     "gsap": "^3.9.1",
     "marquee3000": "^1.1.1",
     "paper": "^0.12.15",
@@ -28,9 +30,11 @@
     "point-of-view": "^5.1.0",
     "pug": "^3.0.2",
     "shortid": "^2.2.16",
-    "three": "^0.139.2"
+    "three": "^0.139.2",
+    "wscat": "^5.1.0"
   },
   "devDependencies": {
+    "@types/ws": "^8.5.3",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "events": "^3.3.0",

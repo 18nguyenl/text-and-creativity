@@ -1,0 +1,32 @@
+extends layout/spellpage.pug
+
+block primary
+    hr
+    .block-center
+        section
+            h2 To Start Off With
+            article.instruction
+                p.
+                    First, choose a spell action. There are four to pay attention to:
+                ol
+                    li Circle
+                    li Line
+                    li Outline
+                    li Label
+        
+        section
+            h2 Spell Actions
+            each article in articles
+                article.instruction
+                    h3=article.title
+                    each paragraph in article.paragraphs
+                        p=paragraph
+                    img(src=`${article.imgUrl}`, alt="", srcset="").block-center
+        
+        section
+            article.instruction
+                h2 Now You Know Spell Actions
+                p To cast a spell, we need to learn how to customize your action and add it to the circle.
+
+                .button__container.button__container--center
+                    a.button__main(href="/prompt") Join Hogwarts

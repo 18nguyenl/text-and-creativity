@@ -1,0 +1,76 @@
+@import url(buttons.css);
+
+.great-magick-circle {
+  display: block;
+
+  margin: calc(var(--dim-sp-sm) * 5) auto;
+}
+
+.image__prompt {
+  width: 100%;
+
+  object-fit: contain;
+
+  margin: auto;
+}
+
+.image__prompt--container {
+  width: 183px;
+  height: 274.5px;
+
+  margin: var(--dim-sp-xxl) auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.canvas__container {
+  flex: 1;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.canvas__container > canvas {
+  flex-grow: 1;
+}
+
+.canvas__container > canvas + * {
+  flex-grow: 0;
+}
+
+.spell-action__container {
+  margin: auto;
+  margin-bottom: var(--dim-sp-md);
+}
+
+.spell-action__container > ul {
+  padding: 0 var(--dim-sp-md);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.spell-action__container > ul > li {
+  list-style-type: none;
+
+  flex: 1;
+}
+
+.spell-action__container > ul > li:not(:last-child) {
+  margin-right: var(--dim-sp-md);
+}
+
+.instruction {
+  max-width: 66ch;
+  margin: var(--dim-sp-lg);
+}
+
+.instruction > img {
+  display: block;
+
+  margin: var(--dim-sp-xl) auto;
+}

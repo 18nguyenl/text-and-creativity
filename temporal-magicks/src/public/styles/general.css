@@ -1,19 +1,26 @@
 body {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-body > main {
-  flex-grow: 1;
+  display: flow-root;
 }
 
 main {
-  height: 100%;
+  min-height: -webkit-fill-available;
 
   display: flex;
   flex-flow: column nowrap;
 }
 
-main > canvas {
+main > .content {
   flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-bottom: var(--dim-sp-xs);
+}
+
+.hr__sp--small {
+  margin-top: var(--dim-sp-sm);
+  margin-bottom: var(--dim-sp-sm);
 }

@@ -1,0 +1,20 @@
+.block-center {
+  margin: auto;
+}
+
+.fill {
+  display: flex;
+  flex-flow: column nowrap;
+
+  flex: 1;
+}
+
+.fill > * {
+  flex-grow: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

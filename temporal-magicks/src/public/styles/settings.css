@@ -13,3 +13,48 @@
   font-family: "Eiko";
   src: url("/fonts/PPEiko-Regular.woff2") format("woff2");
 }
+
+/* Vairables */
+:root {
+  /* ========= */
+  /* Dimensions*/
+  /* ========= */
+  --dim-sp-xs: 0.5rem;
+  --dim-sp-sm: 1rem;
+  --dim-sp-md: 1.5rem;
+  --dim-sp-lg: 2rem;
+  --dim-sp-xl: 3.5rem;
+  --dim-sp-xxl: 4rem;
+
+  /* Page */
+  --dim-page-top: var(--dim-sp-md);
+
+  /* ================== */
+  /* Typography */
+  /* ================== */
+  --type-size-head-1: 3rem;
+  --type-size-head-2: 2rem;
+  --type-size-head-3: 1.5rem;
+  --type-size-body: 1rem;
+
+  --type-size-title: var(--type-size-head-1);
+  --type-size-button: 1.5rem;
+
+  --type-sp-subtitle: 3rem;
+  --type-sp-hrule: 7rem;
+  --type-sp-p: 1rem;
+
+  /* ================== */
+  /* Color */
+  /* ================== */
+  --color-spell-ink: #ca3a1b;
+  --color-spell-aura: #d9ffc8;
+  --color-bg-rule: linear-gradient(
+    270deg,
+    rgba(202, 58, 27, 0) -2.09%,
+    var(--color-spell-ink) 10.67%,
+    var(--color-spell-ink) 44.17%,
+    var(--color-spell-ink) 88.83%,
+    rgba(202, 58, 27, 0) 100%
+  );
+}

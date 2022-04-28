@@ -5,8 +5,24 @@ h4,
 h5,
 h6 {
   font-family: "Migra", serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--type-size-head-2);
+}
+
+h3 {
+  font-size: var(--type-size-head-3);
 }
 
 p {
   font-family: "Eiko", serif;
+}
+
+hr {
+  margin: var(--dim-sp-xl) var(--dim-sp-lg);
+
+  background: var(--color-bg-rule);
+  height: 1px;
 }

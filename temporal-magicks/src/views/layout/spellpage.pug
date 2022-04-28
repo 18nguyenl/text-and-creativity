@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+    header.spellpage
+        h1.title=title
+        if !!subtitle
+            p.subtitle=subtitle
+    .content
+        block primary

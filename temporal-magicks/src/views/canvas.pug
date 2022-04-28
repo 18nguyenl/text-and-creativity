@@ -1,0 +1,21 @@
+extends layout/canvas.pug
+
+block content 
+    .canvas__container
+        canvas#canvas
+        hr.hr__sp--small
+    div.spell-action__container
+            ul
+                //- li
+                //-     a(href="/history") History
+                li
+                    button#CircleAction Circle
+                li
+                    button#LineAction Line
+                li
+                    button#OutlineAction Outline
+                li
+                    button#LabelAction Label
+
+block scripts
+    script(type="module" src="/js/main.js") 

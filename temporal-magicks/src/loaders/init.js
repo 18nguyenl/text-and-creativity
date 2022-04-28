@@ -13,5 +13,6 @@ export default async function (app) {
     });
 
     app.register(Model);
+
     app.register(API);
 }

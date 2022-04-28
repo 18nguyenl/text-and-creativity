@@ -1,25 +1,9 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="/styles/styles.css")
-        title Temporal Magicks
-    body
-        main
-            canvas#canvas(resize="true")
-            div.container__spell-action
-                ul
-                    li
-                        a(href="/history") History
-                    li
-                        a() Circle
-                    li
-                        a() Line
-                    li
-                        a() Outline
-                    li
-                        a() Label
+extends layout/spellpage.pug
 
-        script(type="module" src="/js/main.js") 
+block primary
+    <svg class="great-magick-circle" width="252" height="252" viewBox="0 0 252 252" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="126" cy="126" r="125" stroke="#CA3A1B"/>
+    <path d="M126 3.5L39.3838 213.854L248.5 126L39.3838 38.1465L126 248.5L212.616 38.1465L3.5 126L212.616 213.854L126 3.5Z" stroke="#CA3A1B"/>
+    </svg>
+    div.button__container.button__container--center
+        a(href="/instruction").button__main Start

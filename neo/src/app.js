@@ -2,7 +2,7 @@
 import Fastify from "fastify";
 import Initializer from "./loaders/index.js";
 
-const fastify = Fastify({ logger: true })
+const fastify = Fastify()
 
 // Run the server!
 const start = async () => {

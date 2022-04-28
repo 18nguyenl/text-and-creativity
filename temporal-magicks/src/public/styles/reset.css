@@ -1,11 +1,44 @@
-body {
-  margin: 0;
+* {
   box-sizing: border-box;
+  color: var(--color-spell-ink);
 
-  min-height: 100vh;
+  font-family: "Eiko", serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+
+  margin: 0;
 }
 
 canvas[resize] {
   width: 100%;
   height: 100%;
+
+  max-height: 100vh;
+}
+
+hr {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-spell-aura);
+}
+
+button {
+  background: none;
+  appearance: none;
+
+  font-size: 1rem;
+
+  border: none;
 }

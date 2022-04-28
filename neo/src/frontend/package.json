@@ -4,24 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/esbuild main.js --bundle --minify --outfile=../public/js/main.js",
-    "dev": "./node_modules/.bin/esbuild main.js --bundle --watch --outfile=../public/js/main.js"
+    "build": "NODE_ENV=production node esbuild.config.js",
+    "dev": "NODE_ENV=development node esbuild.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@theatre/core": "^0.4.7",
     "animejs": "^3.2.1",
     "chunk": "^0.0.3",
     "esbuild": "^0.14.25",
-    "install": "^0.13.0",
     "marquee3000": "^1.1.1",
     "npm": "^8.5.3",
     "shuffle-array": "^1.0.1",
     "three": "^0.138.3"
   },
   "devDependencies": {
-    "@theatre/studio": "^0.4.7"
+    "esbuild-plugin-alias": "^0.2.1"
   }
 }

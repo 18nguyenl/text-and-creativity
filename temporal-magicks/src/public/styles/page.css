@@ -1,0 +1,23 @@
+.title {
+  font-size: var(--type-size-title);
+
+  margin: auto;
+  margin-bottom: var(--dim-sp-md);
+
+  max-width: 8ch;
+}
+
+.subtitle {
+  margin: auto;
+
+  text-align: center;
+}
+
+.spellpage > :first-child {
+  margin-top: var(--dim-page-top);
+}
+
+.canvas {
+  height: -webkit-fill-available;
+  overflow: hidden;
+}
